@@ -1,0 +1,17 @@
+
+<h1>Hola mundo. Nombre app en app.component.ts:  {{ titulo }}</h1>
+<h3>La base es: <strong>{{base}}</strong></h3>
+<!-- Las doble llaves es para poner cualquier expresión de java, no solo para sacar variables -->
+
+
+<!-- Los eventos con () aunque la lógica no suele ir en la parte del template a no ser que sea un codigo muy sencillo suele ir en la parte del componente.ts -->
+<!-- <button (click)="num = num + 1;"> + 1</button> -->
+
+<!-- <button (click)="sumar()"> + 1</button> -->
+
+<button (click)="acumular(base)"> + {{base}}</button>
+<span> {{num}} </span>
+<button (click)="acumular(-base)"> - {{base}}</button>
+
+<!-- El undefined no existe en js por lo que no aparece -->
+<span>{{undefined}}</span>
