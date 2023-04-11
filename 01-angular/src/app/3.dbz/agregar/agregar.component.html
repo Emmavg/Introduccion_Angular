@@ -1,0 +1,29 @@
+<h3>Agregar</h3>
+<hr>
+
+<!-- Enviamos el evento entero que genera el formulario -->
+<!-- <form (submit)="agregar($event)"> -->
+<form (ngSubmit)="agregar()">
+    <!-- Las llaves [] son para enlazar una propiedad/variable de el lado del componente -->
+    <input 
+        type="text" 
+        placeholder="Nombre"
+        name="nombre"
+        [(ngModel)]="nuevo.nombre"
+    />
+    <!-- Esta parte del código se puede cambiar por el ngModel -->
+    <!-- 
+        [value]="nuevo.nombre" 
+        el input es para que a medida que escribes le manda al metodo de cambiar nombre pero con el ng model lo va actualizando en tiempo real de forma automática
+        (input)="cambiarNombre($event)"
+        -->
+    <input 
+        type="number" 
+        placeholder="Poder"
+        name="poder"
+        [(ngModel)]="nuevo.poder"
+    />
+    <button type="submit">
+        Agregar
+    </button>
+</form>

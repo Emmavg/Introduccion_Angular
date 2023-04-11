@@ -1,0 +1,6 @@
+ <!-- El number es para que ponga el numero separado por . o , segun los miles -->
+<h3>Personajes</h3>
+<hr>
+<ul>
+    <li *ngFor="let pers of personajes;">{{pers.nombre}} - {{pers.poder | number }}</li>
+</ul>

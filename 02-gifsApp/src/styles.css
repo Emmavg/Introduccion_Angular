@@ -1,0 +1,11 @@
+html, body {
+    /* Para que el alto de la barra lateral ocupe toda la página */
+    height: 100%;
+}
+
+#sidebar {
+    height: 100%;
+    /* Lo mínimo va a ser lo que esté en pantalla */
+    min-height: 100vh;
+    min-width: 180px;
+}

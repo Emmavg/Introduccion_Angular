@@ -39,3 +39,19 @@
   .p-1 {
     padding: 1px;
   }
+
+  /* Para definir en el css que una columna aparezca al lado de otra y no todas debajo */
+  .row{
+    display: flex;
+  }
+
+  /* Que la columna se expanda lo máximo que pueda */
+  .col{
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+
+  input{
+    display: block;
+    margin: 5px;
+  }
