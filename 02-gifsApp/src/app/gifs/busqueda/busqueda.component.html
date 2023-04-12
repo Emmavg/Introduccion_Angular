@@ -1,0 +1,8 @@
+<h5>Buscar:</h5>
+<!-- Que se dispare el veento cuando suelte la enter key el # es una refrencia local a la caja de texto-->
+<input 
+    type="text"
+    class="form-control"
+    placeholder="Buscar gifs..."
+    (keyup.enter)="buscar()"
+    #txtBuscar>
