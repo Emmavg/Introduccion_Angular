@@ -1,0 +1,22 @@
+<!-- mt-4 es margin top -->
+<div class="row conatiner m-4">
+    <!-- 3 columnas max 12 -->
+    <div class="col-3">
+        <h2>Búsquedas</h2>
+   
+        <hr>
+        <ul class="list-group">
+            <li class="list-group-item active">Buscar país</li>
+            <li class="list-group-item">Por región</li>
+            <li class="list-group-item">Por capital</li>
+        </ul>
+    </div>
+
+    <!-- El contenido de este div tiene que ser dinámico dependiendo en el url que tenemos en ese momento en la app  -->
+    <!-- Para esto tenemos que configurar rutas que son las que le van a indicar a angular qué componente mostrar en base a la url -->
+    <div class="col">
+        <h2>Por capital</h2>
+        <hr>
+        <app-por-capital></app-por-capital>
+    </div>
+</div>
